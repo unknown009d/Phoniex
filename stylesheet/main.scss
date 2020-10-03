@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+:root {
+  --primary: #4B4D9C;
+  --secondary: #393e46;
+  --bg-color: #242424;
+  --txt-color: #ffffff;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+}
+header {
+  z-index: 50;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  padding: 3rem 10%;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 9rem;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      margin: 0 0.4rem;
+      position: relative;
+      z-index: 100;
+      &::before {
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        right: 0;
+        content: "";
+        display: flex;
+        background-color: #ffffff28;
+        transform: translateX(-4%);
+        opacity: 0;
+        width: 0%;
+        height: 9px;
+        z-index: -1;
+        transition: opacity 0.4s ease, width 0.4s ease;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+          width: 108%;
+          transition: opacity 0.4s ease, width 0.4s ease;
+        }
+      }
+    }
+    .active {
+      &::before {
+        background-color: var(--primary);
+        opacity: 1;
+        width: 108%;
+      }
+    }
+  }
+}
+.contain {
+  margin: 0 10%;
+}
+.hmPage {
+  padding-top: 5rem;
+  position: relative;
+  background: url(../assets/BG.png) center/cover no-repeat;
+  min-height: 700px;
+  height: 100vh;
+  max-height: 1000px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .hmContent {
+    padding: 2rem 0;
+    z-index: 2;
+    background-color: transparent;
+    color: #ffffff;
+    h2 {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      letter-spacing: -1px;
+      span {
+        color: var(--primary);
+        filter: brightness(140%) hue-rotate(0deg);
+      }
+    }
+    .sm-txt {
+      font-weight: 600;
+      font-size: 1.4rem;
+      opacity: 0.8;
+    }
+    .sm-about {
+      margin-top: 2rem;
+      width: 600px;
+      opacity: 0.8;
+    }
+    .btn {
+      margin-top: 3rem;
+      margin-right: 0.7rem;
+    }
+  }
+  .artwork {
+    min-width: 700px;
+    width: 700px;
+    object-fit: contain;
+    transform: translateX(-50px);
+    filter: hue-rotate(25deg);
+    z-index: 10;
+    pointer-events: none;
+    user-select: none;
+  }
+  canvas {
+    z-index: 1;
+    position: absolute;
+  }
+}
+.btn {
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: var(--primary);
+  border-radius: 4pt;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 4px 5px 15px -5px #0000006c;
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #00000025;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    opacity: 0;
+    background-color: #00000046;
+    transition: opacity 0.2s ease, width 0.4s ease;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    &::after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 4px 0px 15px -5px #00000054;
+  }
+}
+.bg-none {
+  background-color: transparent;
+}
+.td-none {
+  text-decoration: none;
+}
+.shadow-none {
+  box-shadow: none !important;
+}
+.shadow-less {
+  box-shadow: 5px 2px 20px -5px #00000049;
+}
+.btn-secondary {
+  background-color: var(--secondary) !important;
+}
