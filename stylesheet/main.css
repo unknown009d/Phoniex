@@ -117,7 +117,7 @@ header nav .active::before {
   background: url(../assets/BG.webp) center/cover no-repeat;
   min-height: 700px;
   height: 100vh;
-  max-height: 1000px;
+  max-height: 800px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,6 +146,7 @@ header nav .active::before {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: -1px;
+  width: 600px;
 }
 
 .hmPage .hmContent h2 span {
@@ -191,6 +192,271 @@ header nav .active::before {
 .hmPage canvas {
   z-index: 1;
   position: absolute;
+}
+
+@media (max-width: 1616px) {
+  .hmPage .hmContent .sm-txt {
+    font-size: 1rem;
+  }
+  .hmPage .hmContent h2 {
+    font-size: 2rem;
+    width: 500px;
+  }
+  .hmPage .hmContent .sm-about {
+    font-size: 0.8rem;
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1413px) {
+  .hmPage .hmContent .sm-txt {
+    font-size: 1vw;
+  }
+  .hmPage .hmContent h2 {
+    font-size: 2.6vw;
+    line-height: 2rem;
+  }
+  .hmPage .hmContent .sm-about {
+    font-size: 1.2vw;
+    width: 35vw;
+  }
+  .hmPage .artwork {
+    width: 60vw;
+    min-width: auto;
+  }
+  .hmPage .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1130px) {
+  .hmPage .hmContent h2 {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  header img {
+    width: 8rem;
+  }
+  header nav a {
+    font-size: 0.9rem;
+  }
+  .hmPage {
+    min-height: 600px;
+    max-height: 600px;
+  }
+  .hmPage .hmContent .sm-about {
+    margin-top: 1rem;
+  }
+  .hmPage .hmContent .btn {
+    margin-top: 2rem;
+    padding: 0.6rem 1.1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  header img {
+    width: 8rem;
+  }
+  header nav a {
+    font-size: 0.8rem;
+  }
+  .hmPage {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
+  .hmPage .hmContent {
+    margin-right: 2rem;
+  }
+  .hmPage .hmContent .sm-txt {
+    font-size: 0.8rem;
+  }
+  .hmPage .hmContent h2 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    width: 340px;
+  }
+  .hmPage .hmContent .sm-about {
+    font-size: 0.8rem;
+    width: 300px;
+    line-height: 1rem;
+  }
+  .hmPage .artwork {
+    width: 400px;
+    min-width: 400px;
+  }
+  .hmPage .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header nav a {
+    font-size: 0.7rem;
+  }
+  .hmPage .hmContent .sm-txt {
+    font-size: 0.6rem;
+  }
+  .hmPage .hmContent h2 {
+    font-size: 1.2rem;
+    width: 250px;
+  }
+  .hmPage .hmContent .sm-about {
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 200px;
+  }
+  .hmPage .hmContent .btn {
+    font-size: 0.6rem;
+  }
+  .hmPage .artwork {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 620px) {
+  header {
+    padding: 1.8rem 10%;
+  }
+  header img {
+    width: 100px;
+  }
+  header nav {
+    display: none;
+  }
+  .hmPage {
+    padding-top: 7rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-height: 540px;
+  }
+  .hmPage .hmContent .sm-txt {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .hmPage .hmContent h2 {
+    font-size: 1.6rem;
+    width: 100%;
+    line-height: 2rem;
+    text-align: left;
+    width: 400px;
+  }
+  .hmPage .hmContent .sm-about {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    min-width: 200px;
+    width: 100%;
+    text-align: left;
+  }
+  .hmPage .hmContent .btn {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
+  }
+  .hmPage .artwork {
+    width: 100%;
+    -webkit-transform: rotateY(180deg) translateX(15vw) scale(1.2);
+            transform: rotateY(180deg) translateX(15vw) scale(1.2);
+    height: 200px;
+  }
+}
+
+@media (max-width: 470px) {
+  .hmPage .hmContent h2 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 470px) {
+  .hmPage .hmContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hmPage .hmContent h2 {
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+  }
+  .hmPage .hmContent .sm-txt {
+    font-size: 0.7rem;
+  }
+  .hmPage .hmContent .sm-about {
+    font-size: 0.85rem;
+    line-height: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .hmPage .hmContent .btn {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .hmPage .artwork {
+    width: 100%;
+    -webkit-transform: rotateY(180deg) translateX(20px) scale(1.2);
+            transform: rotateY(180deg) translateX(20px) scale(1.2);
+    height: 200px;
+  }
+}
+
+@media (max-width: 310px) {
+  .hmPage .hmContent h2 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .hmPage .hmContent .sm-txt {
+    font-size: 0.6rem;
+  }
+  .hmPage .hmContent .sm-about {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    margin-bottom: 1.4rem;
+  }
+  .hmPage .hmContent .btn {
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    padding: .6rem 1rem;
+  }
+  .hmPage .artwork {
+    width: 100%;
+    -webkit-transform: rotateY(180deg) translateX(50px) scale(1.2);
+            transform: rotateY(180deg) translateX(50px) scale(1.2);
+    height: 150px;
+  }
+}
+
+@media (max-width: 230px) {
+  main {
+    display: none;
+  }
 }
 
 .btn {
