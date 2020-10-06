@@ -751,6 +751,11 @@ header nav .active::before {
   padding: 2rem 0;
 }
 
+.otherService .contain {
+  border-top: 1px dotted #00000025;
+  padding-top: 1rem;
+}
+
 .otherService h6 {
   font-weight: 400;
   font-size: 1rem;

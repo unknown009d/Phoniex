@@ -653,6 +653,10 @@ header {
   background-color: #ffffff;
   color: #303030;
   padding: 2rem 0;
+  .contain{
+    border-top: 1px dotted #00000025;
+    padding-top: 1rem;
+  }
   h6 {
     font-weight: 400;
     font-size: 1rem;
