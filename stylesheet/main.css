@@ -1247,16 +1247,11 @@ footer div:nth-child(2) a:hover, footer div:nth-child(3) a:hover, footer div:nth
   padding: 1.3rem 10%;
   background-color: #202020;
   font-size: 0.85rem;
-  color: #ffffff;
+  color: #ffffff70;
 }
 
 .footerDown a {
-  color: #ffffff;
-}
-
-.footerDown p,
-.footerDown a {
-  opacity: 0.4;
+  color: #ffffff70;
 }
 
 @media (max-width: 1300px) {
