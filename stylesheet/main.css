@@ -259,13 +259,13 @@ header nav .active::before {
 .hmPage .hmContent .sm-txt {
   font-weight: 600;
   font-size: 1.4rem;
-  opacity: 0.8;
+  opacity: 0;
 }
 
 .hmPage .hmContent .sm-about {
   margin-top: 2rem;
   width: 600px;
-  opacity: 0.8;
+  opacity: 0;
 }
 
 .hmPage .hmContent .btn {
@@ -299,14 +299,16 @@ header nav .active::before {
 @media (max-width: 1616px) {
   .hmPage .hmContent .sm-txt {
     font-size: 1rem;
+    opacity: 0.8;
   }
   .hmPage .hmContent h2 {
     font-size: 2rem;
     width: 500px;
   }
   .hmPage .hmContent .sm-about {
-    font-size: 0.8rem;
-    width: 30vw;
+    font-size: 0.9rem;
+    width: 34vw;
+    opacity: 0.8;
   }
 }
 

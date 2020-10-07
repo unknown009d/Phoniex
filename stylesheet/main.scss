@@ -195,12 +195,12 @@ header {
     .sm-txt {
       font-weight: 600;
       font-size: 1.4rem;
-      opacity: 0.8;
+      opacity: 0;
     }
     .sm-about {
       margin-top: 2rem;
       width: 600px;
-      opacity: 0.8;
+      opacity: 0;
     }
     .btn {
       margin-top: 3rem;
@@ -228,14 +228,16 @@ header {
     .hmContent {
       .sm-txt {
         font-size: 1rem;
+        opacity: 0.8;
       }
       h2 {
         font-size: 2rem;
         width: 500px;
       }
       .sm-about {
-        font-size: 0.8rem;
-        width: 30vw;
+        font-size: 0.9rem;
+        width: 34vw;
+        opacity: 0.8;
       }
     }
   }
