@@ -1,0 +1,97 @@
+@media (min-width: 800px) {
+  @keyframes aniFup {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes aniFdown {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes aniFleft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  @keyframes aniFright {
+    0% {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  @keyframes opaMore {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes smtolg {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes lgtosm {
+    0% {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .ani {
+    opacity: 0;
+  }
+  .aniFup {
+    animation: aniFup 0.8s ease both 0.2s;
+  }
+  .aniFdown {
+    animation: aniFdown 0.8s ease both 0.2s;
+  }
+  .aniFright {
+    animation: aniFright 0.8s ease both 0.2s;
+  }
+  .aniFleft {
+    animation: aniFleft 0.8s ease both 0.2s;
+  }
+  .opaMore {
+    animation: opaMore 1.2s ease both 0.2s;
+  }
+  .smtolg {
+    animation: smtolg 1.2s ease both 0.2s;
+  }
+  .lgtosm {
+    animation: lgtosm 1.2s ease both 0.2s;
+  }
+  #particles-js canvas {
+    animation: lgtosm 1.8s ease both 0.6s;
+  }
+}

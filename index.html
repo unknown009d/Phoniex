@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phoniex</title>
     <link rel="stylesheet" href="stylesheet/main.css" />
+    <link rel="stylesheet" href="stylesheet/animations.css" />
   </head>
   <body>
-    <header>
+    <header class="ani" data-aniClass="opaMore" data-aniFirst="true">
       <img src="assets/PhoniexLogo.svg" alt="Phoniex." />
       <nav>
         <a href="home.html" class="active">home</a>
@@ -20,36 +21,75 @@
     <main>
       <section class="hmPage" id="particles-js">
         <section class="contain hmContent">
-          <p class="sm-txt">Welcome to the</p>
-          <h2>
+          <p class="sm-txt ani" data-aniClass="aniFup" data-aniFirst="true">
+            Welcome to the
+          </p>
+          <h2
+            class="ani"
+            data-aniClass="aniFup"
+            data-aniFirst="true"
+            style="animation-delay: 0.2s"
+          >
             India’s <span> Fastest & Affordable</span> Hosting Service Ever.
           </h2>
-          <p class="sm-about">
+          <p
+            class="sm-about ani"
+            data-aniClass="aniFup"
+            data-aniFirst="true"
+            style="animation-delay: 0.4s"
+          >
             Are you looking for fastest web hosting services In 2020 which
             should be best, secure, reliable then you are on the right place.
             Having a good web hosting service allows you to have a profitable
             venture in future.
           </p>
-          <button class="btn">Get Started</button>
-          <button class="btn btn-secondary td-none shadow-less">
+          <button
+            class="btn ani"
+            data-aniClass="aniFup"
+            data-aniFirst="true"
+            style="animation-delay: 0.6s"
+          >
+            Get Started
+          </button>
+          <button
+            class="btn btn-secondary td-none shadow-less ani"
+            data-aniClass="aniFup"
+            data-aniFirst="true"
+            style="animation-delay: 0.8s"
+          >
             View Plans
           </button>
         </section>
         <img
           src="assets/ServerArtwork.svg"
-          class="artwork"
+          class="artwork ani"
+          data-aniClass="aniFup"
+          data-aniFirst="true"
+          style="animation-delay: 0.5s"
           alt="Server Artwork"
         />
       </section>
       <section class="services">
         <figure>
           <div class="img">
-            <img src="assets/DedicatedServer.svg" alt="DedicatedServer" />
+            <img
+              src="assets/DedicatedServer.svg"
+              alt="DedicatedServer"
+              class="ani"
+              data-aniClass="aniFleft"
+              style="animation-delay: 0.4s"
+            />
           </div>
           <div class="conTxt contain">
             <figcaption>
-              <h2>Dedicated Server Hosting</h2>
-              <p class="ltText">
+              <h2 class="ani" data-aniClass="aniFright">
+                Dedicated Server Hosting
+              </h2>
+              <p
+                class="ltText ani"
+                data-aniClass="aniFright"
+                style="animation-delay: 0.4s"
+              >
                 A dedicated hosting service, dedicated server, or managed
                 hosting service is a type of Internet hosting in which the
                 client leases an entire server not shared with anyone else. This
@@ -57,8 +97,18 @@
                 control over the server(s), including choice of operating
                 system, hardware, etc.
               </p>
-              <p class="ulCap">The Features are as follows :</p>
-              <ul>
+              <p
+                class="ulCap ani"
+                data-aniClass="aniFright"
+                style="animation-delay: 0.5s"
+              >
+                The Features are as follows :
+              </p>
+              <ul
+                class="ani"
+                data-aniClass="aniFright"
+                style="animation-delay: 0.6s"
+              >
                 <li>Operating system choices</li>
                 <li>Server configuration</li>
                 <li>Hardware choices</li>
@@ -71,13 +121,21 @@
                 <li>High availability</li>
                 <li>Ease Technical Support 24x7</li>
               </ul>
-              <p class="price">
+              <p class="price ani" data-aniClass="aniFright">
                 Starting from <br />
                 <span class="txt-primary"> ₹699.00/<strong>month</strong></span>
               </p>
-              <button class="btn">Expore More</button>
-              <button class="btn btn-secondary">Request a demo</button>
-              <p class="sm-text">
+              <button class="btn ani" data-aniClass="aniFright">
+                Expore More
+              </button>
+              <button
+                class="btn btn-secondary ani"
+                data-aniClass="aniFright"
+                style="animation-delay: 0.4s"
+              >
+                Request a demo
+              </button>
+              <p class="sm-text ani" data-aniClass="opaMore">
                 * Terms and Condition applied to the above products
               </p>
             </figcaption>
@@ -86,8 +144,14 @@
         <figure>
           <div class="conTxt contain vpsCon">
             <figcaption>
-              <h2>Virtual Private Server Hosting</h2>
-              <p class="ltText">
+              <h2 class="ani" data-aniClass="aniFleft">
+                Virtual Private Server Hosting
+              </h2>
+              <p
+                class="ltText ani"
+                data-aniClass="aniFleft"
+                style="animation-delay: 0.4s"
+              >
                 A VPS runs its own copy of an operating system, and customers
                 may have superuser-level access to that operating system
                 instance, so they can install almost any software that runs on
@@ -97,8 +161,18 @@
                 much lower than an equivalent physical server. However, as they
                 share the underlying physical hardware with other VPS.
               </p>
-              <p class="ulCap">The Features are as follows :</p>
-              <ul>
+              <p
+                class="ulCap ani"
+                data-aniClass="aniFleft"
+                style="animation-delay: 0.6s"
+              >
+                The Features are as follows :
+              </p>
+              <ul
+                class="ani"
+                data-aniClass="aniFleft"
+                style="animation-delay: 0.6s"
+              >
                 <li>Guaranteed Resources</li>
                 <li>Server configuration</li>
                 <li>Hardware choices</li>
@@ -108,30 +182,60 @@
                 <li>High availability</li>
                 <li>Ease Technical Support 24x7</li>
               </ul>
-              <p class="price">
+              <p
+                class="price ani"
+                data-aniClass="aniFleft"
+                style="animation-delay: 0.4s"
+              >
                 Starting from <br /><span>₹399.00/<strong>month</strong></span>
               </p>
-              <button class="btn">Expore More</button>
-              <button class="btn btn-secondary">Request a demo</button>
-              <p class="sm-text">
+              <button
+                class="btn ani"
+                data-aniClass="aniFleft"
+                style="animation-delay: 0.4s"
+              >
+                Expore More
+              </button>
+              <button
+                class="btn btn-secondary ani"
+                data-aniClass="aniFleft"
+                style="animation-delay: 0.8s"
+              >
+                Request a demo
+              </button>
+              <p class="sm-text ani" data-aniClass="opaMore">
                 * Terms and Condition applied to the above products
               </p>
             </figcaption>
           </div>
           <div class="img hueChange">
-            <img src="assets/VPS.svg" alt="VPS" />
+            <img
+              src="assets/VPS.svg"
+              alt="VPS"
+              class="ani"
+              data-aniClass="aniFright"
+              style="animation-delay: 0.4s"
+            />
           </div>
         </figure>
       </section>
       <section class="otherService">
         <br />
         <div class="contain">
-          <h6>we also offer</h6>
-          <h2 class="txt-primary">Shared Hosting Service</h2>
+          <h6 class="ani" data-aniClass="aniFup">we also offer</h6>
+          <h2
+            class="txt-primary ani"
+            data-aniClass="aniFup"
+            style="animation-delay: 0.4s"
+          >
+            Shared Hosting Service
+          </h2>
           <br /><br />
-          <h4>Our Plans are as follows...</h4>
+          <h4 class="ani" data-aniClass="aniFup" style="animation-delay: 0.6s">
+            Our Plans are as follows...
+          </h4>
           <div class="plansChart">
-            <div class="chart">
+            <div class="chart ani" data-aniClass="opaMore">
               <h3>Starter Web Hosting</h3>
               <p class="sm-text">Good choice for newbies</p>
               <ul>
@@ -146,7 +250,12 @@
               <p class="price">₹ 39.00/<span class="xsm-text">month</span></p>
               <button class="btn shadow-less">Buy Now</button>
             </div>
-            <div class="chart Premium" data-badge="Best Seller">
+            <div
+              class="chart Premium ani"
+              data-aniClass="opaMore"
+              style="animation-delay: 0.4s"
+              data-badge="Best Seller"
+            >
               <h3>Premium Web Hosting</h3>
               <p class="sm-text">The Best choice anyone can go for</p>
               <ul>
@@ -161,7 +270,11 @@
               <p class="price">₹ 259.00/<span class="xsm-text">month</span></p>
               <button class="btn shadow-less">Buy Now</button>
             </div>
-            <div class="chart">
+            <div
+              class="chart ani"
+              data-aniClass="opaMore"
+              style="animation-delay: 0.8s"
+            >
               <h3>Platinum Web Hosting</h3>
               <p class="sm-text">If you have too much extra penny</p>
               <ul>
@@ -181,47 +294,33 @@
       </section>
       <section class="bannerContact">
         <div class="left">
-          <h2>Want to communicate with Phoniex Team ?</h2>
-          <h5>
+          <h2 class="ani" data-aniClass="opaMore" style="animation-delay: 0.2s">
+            Want to communicate with Phoniex Team ?
+          </h2>
+          <h5 class="ani" data-aniClass="opaMore" style="animation-delay: 0.4s">
             We the team of Phoniex Studios are herbly interested to help you
             guys in any kind of situation, please contact us without any
             hesitaion. We have people for helping you 24x7
           </h5>
         </div>
-        <button class="btn shadow-less">Contact Us</button>
+        <button class="btn shadow-less ani" data-aniClass="opaMore">
+          Contact Us
+        </button>
       </section>
       <section class="customers">
-        <h2>Our Customers</h2>
+        <h2 class="ani" data-aniClass="aniFup">Our Customers</h2>
         <div class="gridCus">
-          <img
-            src="assets/Customers/1.webp"
-            alt="Foundary"
-          />
-          <img
-            src="assets/Customers/2.webp"
-            alt="Corporate"
-          />
-          <img
-            src="assets/Customers/3.webp"
-            alt="Green Company"
-          />
-          <img
-            src="assets/Customers/4.webp"
-            alt="Icas"
-          />
-          <img
-            src="assets/Customers/5.webp"
-            alt="Icas"
-          />
-          <img
-            src="assets/Customers/6.webp"
-            alt="Valley"
-          />
+          <img src="assets/Customers/1.webp" alt="Foundary" />
+          <img src="assets/Customers/2.webp" alt="Corporate" />
+          <img src="assets/Customers/3.webp" alt="Green Company" />
+          <img src="assets/Customers/4.webp" alt="Icas" />
+          <img src="assets/Customers/5.webp" alt="Icas" />
+          <img src="assets/Customers/6.webp" alt="Valley" />
         </div>
       </section>
     </main>
     <footer>
-      <div>
+      <div class="ani" data-aniClass="opaMore" style="animation-delay: 0.4s">
         <img src="assets/PhoniexLogo.svg" class="logoP" alt="Phoniex" />
         <span>
           <a href="https://www.facebook.com">
@@ -235,22 +334,26 @@
           </a>
         </span>
       </div>
-      <div></div>
-      <div>
+      <div
+        class="ani"
+        data-aniClass="opaMore"
+        style="animation-delay: 0.4s"
+      ></div>
+      <div class="ani" data-aniClass="opaMore" style="animation-delay: 0.4s">
         <a>Mobile Pen Testing</a>
         <a>Mobile Application</a>
         <a>Web Apps Pen Testing</a>
         <a>Mobile Application</a>
         <a>Web Application</a>
       </div>
-      <div>
+      <div class="ani" data-aniClass="opaMore" style="animation-delay: 0.4s">
         <a>Blog</a>
         <a>Podcast</a>
         <a>Youtube videos</a>
         <a>Downloadable Files</a>
         <a>Case Studies</a>
       </div>
-      <div>
+      <div class="ani" data-aniClass="opaMore" style="animation-delay: 0.4s">
         <a>Website Design</a>
         <a>UI/UX Design</a>
         <a>SEO / SMM</a>
@@ -258,12 +361,16 @@
       </div>
     </footer>
     <div class="footerDown">
-      <p>&copy; Copyright not reserved. 2020</p>
-      <a href="https://www.freepik.com">
+      <p class="ani" data-aniClass="aniFleft">
+        &copy; Copyright not reserved. 2020
+      </p>
+      <a href="https://www.freepik.com" class="ani" data-aniClass="aniFright">
         Illustration created by - www.freepik.com
       </a>
     </div>
     <script src="js/particles.min.js"></script>
     <script src="js/particles-app.js"></script>
+    <script src="js/ScrollAnimation-min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
